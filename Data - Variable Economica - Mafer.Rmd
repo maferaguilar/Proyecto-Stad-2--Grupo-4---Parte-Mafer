@@ -1,0 +1,18 @@
+
+Variable económica
+
+```{r}
+link="data_final_mafer.xlsx"
+
+library(openxlsx)
+
+internet_esperanza=read.xlsx("data_final_mafer.xlsx",sheet=1,startRow=1,skipEmptyRows=T,skipEmptyCols=T)
+
+head(internet_esperanza)
+```
+
+
+
+
+
+
