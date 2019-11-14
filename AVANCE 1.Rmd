@@ -1,0 +1,20 @@
+ DIGANME QUE CORRE
+```{r}
+library(rio)
+linkToData='https://github.com/valerie-marchena/datatrabajofinal/raw/master/DataFinal-Valerie.xlsx'
+hsb=import(linkToData)
+```
+```{r}
+str(hsb)
+```
+```{r}
+linkToData2='https://github.com/maferaguilar/Proyecto-Stad-2--Grupo-4---Parte-Mafer/raw/master/data_final_mafer.xlsx'
+hsb2=import(linkToData2)
+str(hsb2)
+```
+```{r}
+data=merge(hsb,hsb2,by.x='Departamento', by.y='DEPARTAMENTO') 
+
+```
+
+
